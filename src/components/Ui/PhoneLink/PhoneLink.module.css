@@ -1,0 +1,23 @@
+.link {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-black);
+  margin-right: auto;
+}
+
+@media screen and (max-width: 830px){
+  .link {
+    display: none;
+  }
+}
+
+.text{
+  line-height: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-white);
+  transition: all, ease-in .2s;
+}
+
+.text:hover {
+  border-bottom: 1px solid var(--color-black);
+}

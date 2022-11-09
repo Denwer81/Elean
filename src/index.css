@@ -1,0 +1,31 @@
+@import url(./vendors/normalize.css);
+@import url(./vendors/fonts/fonts.css);
+
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey: #9D9DAD;
+  --color-light-gray: #E3E4E4;
+  --color-gold: #D7B494;
+
+	--color-background: #FAFAFA;
+	--color-background-alt: #343A40;
+
+	--transition: all .2s ease-in;
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-family: "futura", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  background-color: var(--color-background);
+  color: var(--color-black);
+  scroll-behavior: smooth;
+}

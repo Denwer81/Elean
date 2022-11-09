@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'futura';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./FuturaBookC.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'futura';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./FuturaMediumC.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'futura';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./FuturaDemiC.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'lato';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./Lato-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'lato';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./Lato-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'lato';
+  font-style:  normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./Lato-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'lato';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./Lato-Bold.woff") format("woff");
+}

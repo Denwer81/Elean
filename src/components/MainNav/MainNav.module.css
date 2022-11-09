@@ -1,0 +1,109 @@
+.nav {
+  width: 100%;
+}
+
+@media screen and (max-width: 830px){
+  .nav {
+    display: none;
+  }
+}
+
+.navMobile {
+  display: flex;
+  filter: invert(1);
+  z-index: 5;
+}
+
+.list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listMobile {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.itemList {
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.mobileLink {
+  display: flex;
+  filter: invert(1);
+}
+
+.menuIcon::before {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 11px;
+  content: '';
+  background-color: black;
+  z-index: 52222;
+}
+
+.menu:hover .dropMenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropMenu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  bottom: 0;
+  flex-direction: column;
+  opacity: 0;
+  padding: 25px 0 0 0;
+  visibility: hidden;
+  list-style: none;
+  transition: var(--transition);
+  z-index: 10;
+}
+
+.dropMenu::after {
+  position: absolute;
+  top: 0;
+  left: -1500px;
+  width: 5000px;
+  content: '';
+  background-color: var(--color-white);
+  z-index: -1;
+}
+
+.category::after {
+  height: 390px;
+}
+
+.collection::after {
+  height: 215px;
+}
+
+.buyers::after {
+  height: 245px;
+}
+
+.about::after {
+  height: 145px;
+}
+
+.menuMobile {
+  display: none;
+}
+
+.menuMobileActive {
+  display: block;
+  height: 100%;
+  list-style: none;
+  padding-left: 15px;
+  padding-top: 25px;
+}

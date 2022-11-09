@@ -1,0 +1,26 @@
+.container {
+  width: 120px;
+  display: flex;
+  justify-self: baseline;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 830px){
+  .container {
+    display: none;
+  }
+}
+
+.link {
+  transition: var(--transition);
+}
+
+.link:hover {
+  opacity: .8;
+}
+
+.image {
+  display: flex;
+}
+

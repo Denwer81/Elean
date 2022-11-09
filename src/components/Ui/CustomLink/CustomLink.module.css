@@ -1,0 +1,37 @@
+.link {
+  text-decoration: none;
+}
+
+.linkMobile {
+  display: block;
+  /* margin-bottom: 25px; */
+}
+
+.text{
+  line-height: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-white);
+  transition: all, ease-in .2s;
+}
+
+.text:hover {
+  border-bottom: 1px solid var(--color-black);
+}
+
+.default {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.submenu {
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+.mobile {
+  font-weight: 300;
+  font-size: 22px;
+}

@@ -1,0 +1,137 @@
+.wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-white);
+}
+
+.container {
+  position: relative;
+  min-height: 92px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+}
+
+.burger {
+  width: 24px;
+  height: 17px;
+  display: none;
+  position: relative;
+  background-color: inherit;
+  border: solid 1px var(--color-grey);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin: 0 5px 4px 5px;
+  padding: 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.burger::after,
+.burger::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: var(--color-grey);
+  transition: var(--transition);
+}
+
+.burger::after {
+  top: 15px;
+  left: 0;
+}
+
+.burger::before {
+  top: 7px;
+  left: 0;
+}
+
+.burger:hover {
+  border-color: var(--color-grey);
+}
+
+.burger:hover.burger::after,
+.burger:hover.burger::before {
+  background-color: var(--color-grey);
+}
+
+@media screen and (max-width: 830px) {
+  .burger {
+    display: block;
+  }
+}
+
+.burgeActive {
+  position: relative;
+  z-index: 5;
+}
+
+.burgeActive {
+  border: none;
+}
+
+.burgeActive::after,
+.burgeActive::before {
+  background-color: var(--color-white);
+  transform: rotate(45deg);
+  top: 7px;
+}
+
+.burgeActive::before {
+  transform: rotate(-45deg);
+}
+
+.burgeActive:hover .burgeActive::after,
+.burgeActive:hover .burgeActive::hover {
+  background-color: var(--color-white);
+}
+
+@media screen and (min-width: 300px) {
+  .burgeActive {
+    display: block;
+  }
+}
+
+.topNav {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 34px;
+}
+
+@media screen and (max-width: 830px) {
+  .topNav {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.topNavMobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobileOverlay {
+  position: fixed;
+  height: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .3;
+  background-color: var(--color-black);
+  transition: var(--transition);
+  z-index: 2;
+}
+
+.mobileOverlayActive {
+  height: 100%;
+  opacity: 1;
+}
