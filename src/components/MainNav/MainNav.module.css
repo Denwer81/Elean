@@ -28,6 +28,10 @@
   margin-top: 25px;
 }
 
+.menu {
+  position: relative;
+}
+
 .itemList {
   margin-bottom: 25px;
   padding-bottom: 5px;
@@ -93,17 +97,23 @@
 }
 
 .about::after {
-  height: 145px;
+  height: 140px;
 }
 
 .menuMobile {
   display: none;
+  list-style: none;
+  padding-left: 15px;
+  padding-top: 25px;
+  transform-origin: top;
+  animation: menu .4s ease-in;
 }
 
 .menuMobileActive {
   display: block;
-  height: 100%;
-  list-style: none;
-  padding-left: 15px;
-  padding-top: 25px;
+}
+
+@keyframes menu {
+  0% { opacity: 0; transform: scaleY(.1);}
+  100% { opacity: 100%; transform: scaleY(1);}
 }

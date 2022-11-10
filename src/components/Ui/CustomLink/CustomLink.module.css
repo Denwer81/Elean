@@ -4,22 +4,35 @@
 
 .linkMobile {
   display: block;
-  /* margin-bottom: 25px; */
 }
 
 .text{
+  position: relative;
   line-height: 20px;
   text-decoration: none;
-  border-bottom: 1px solid var(--color-white);
-  transition: all, ease-in .2s;
 }
 
-.text:hover {
-  border-bottom: 1px solid var(--color-black);
+.text::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    content: '';
+    opacity: 0;
+    background-color: var(--color-black);
+    transition: all, ease-in .2s;
+    transform-origin: bottom 50%;
+    transform: scale(.8);
+}
+
+.text:hover.text::after {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .default {
-  font-size: 14px;
+  font-size: inherit;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--color-black);

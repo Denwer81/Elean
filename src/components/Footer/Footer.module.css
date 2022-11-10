@@ -1,0 +1,128 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+
+@media screen and (min-width: 650px){
+  .mobileNav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .containerLogo {
+    position: absolute;
+    top: 456px;
+    right: 0;
+  }
+  .contacts {
+    width: 100%;
+  }
+}
+
+.phones {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50px;
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 650px){
+  .phones,
+  .email {
+    display: none;
+  }
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 550px;
+}
+
+@media screen and (max-width: 1280px) {
+  .nav {
+    order: 2;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .navContainer {
+    display: none;
+  }
+}
+
+.addresContainer {
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 37px 0 8px 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .addresContainer {
+    order: -1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .addresContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .addres {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .addres {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .addres {
+    width: 400px;
+  }
+}
+
+.time {
+  min-width: 155px;
+}
+
+@media screen and (max-width: 1280px) {
+  .time {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 830px){
+  .time {
+    min-width: 0;
+    width: 110px;
+  }
+}

@@ -6,7 +6,7 @@ import styles from './MainLogo.module.css'
 
 function MainLogo({ text, isOpen }) {
   return (
-    <div className={styles.container}>
+    <>
       <Link className={`${styles.link} ${isOpen && styles.linkMobile}`}>
         <img
           className={styles.logo}
@@ -15,7 +15,7 @@ function MainLogo({ text, isOpen }) {
       </Link>
       <p className={`${styles.text} ${isOpen && styles.textMobile}`}>{text}
       </p>
-    </div>
+    </>
   )
 }
 

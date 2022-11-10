@@ -1,0 +1,215 @@
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+@media screen and (max-width: 650px) {
+  .form {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0 0 5px 20px;
+    border-bottom: 1px solid var(--color-grey);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .mobileText {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mobileText {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 5px;
+
+    margin-bottom: 18px;
+  }
+}
+
+.input {
+  height: 34px;
+  border: 1px solid var(--color-gold);
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.input::placeholder {
+  color: black;
+}
+
+.input:focus {
+  outline: 1px solid rgba(215, 180, 148, .4);
+}
+
+@media screen and (max-width: 650px) {
+  .input:focus {
+    outline: 1px solid var(--color-black);
+    border-bottom: var(--color-white);
+  }  
+}
+
+@media screen and (min-width: 650px) {
+  .mobileButton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .email {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-black);
+    font-size: 14px;
+    padding-left: 70px;
+  }
+
+  .mobileButton {
+    position: absolute;
+    top: 59px;
+    top: 48px;
+    right: 0;
+    font-family: "Futura", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .mobileButton:before {
+    position: absolute;
+    content: 'введите';
+    top: 3px;
+    left: -395px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 470px){
+  .mobileButton:before {
+    left: -255px;
+  }
+}
+
+.checkbox {
+  display: none;
+}
+
+.labelCheckbox {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.labelCheckbox::after,
+.labelCheckbox::before {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  content: '';
+}
+
+.labelCheckbox::before {
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: solid 1px var(--color-gold);
+}
+
+.labelCheckbox::after {
+  top: 7px;
+  left: -4px;
+  width: 10px;
+  height: 1px;
+  background-color: var(--color-gold);
+  transition: var(--transition);
+}
+
+.checkbox:checked+.labelCheckbox::after {
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--color-gold);
+  margin-left: 20px;
+}
+
+.link {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--color-black);
+  margin-left: 3px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  border: 1px solid var(--color-gold);
+  font-family: "Futura", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.button:hover {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+}
+
+.arrow {
+  font-size: 20px;
+  color: var(--color-gold);
+  margin: 0 10px 3px auto;
+  transition: var(--transition);
+}
+
+.button:hover .arrow {
+  color: var(--color-white);
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 650px) {
+
+  .name,
+  .labelCheckbox,
+  .button {
+    display: none;
+  }
+}

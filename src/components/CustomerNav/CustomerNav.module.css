@@ -2,15 +2,21 @@
   width: 240px;
   display: flex;
   justify-content: flex-end;
-  align-items: baseline;
+  align-items: center;
   justify-self: end;
+}
+
+@media screen and (max-width: 830px){
+  .phoneContainer {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 830px){
   .container {
     justify-content: space-between;
     width: 100%;
-    margin-right: 24px;
+    margin-right: 19px;
   }
 }
 

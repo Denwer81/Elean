@@ -7,13 +7,9 @@ function CustomLink({ children, to, text, type, isOpen }) {
   const textClassName = () => {
     switch (type) {
       case 'default':
-        return !isOpen
-          ? `${styles.text} ${styles.default}`
-          : `${styles.text} ${styles.default} ${styles.mobile}`
+        return `${styles.text} ${styles.default} ${isOpen && styles.mobile}`
       case 'submenu':
-        return !isOpen
-          ? `${styles.text} ${styles.submenu}`
-          : `${styles.text} ${styles.submenu} ${styles.mobile}`
+        return `${styles.text} ${styles.submenu} ${isOpen && styles.mobile}`
       default:
         return ''
     }

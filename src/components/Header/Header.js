@@ -15,7 +15,7 @@ function Header() {
   }
 
   return (
-    <div className={styles.wrapper}>
+    <header className={styles.header}>
       <Container type={'main'}>
         <div className={styles.container}>
           <div className={`${styles.topNav} ${isOpen && styles.topNavMobile}`}>
@@ -23,15 +23,19 @@ function Header() {
               onClick={handleToggle}
               className={`${styles.burger} ${isOpen && styles.burgeActive}`}
               type='button'></button>
-            <SosialNav isOpen={isOpen} />
-            <MainLogo isOpen={isOpen} text={'ЖЕНСКИЙ\nСМОКИНГ'} />
+            <div className={styles.sosial}>
+              <SosialNav isOpen={isOpen} />
+            </div>
+            <div className={styles.logoContainer}>
+              <MainLogo isOpen={isOpen} text={'ЖЕНСКИЙ\nСМОКИНГ'} />
+            </div>
             <CustomerNav isOpen={isOpen} />
           </div>
-          <MainNav isOpen={isOpen}/>
+          <MainNav isOpen={isOpen} />
         </div>
       </Container>
       <div className={`${styles.mobileOverlay} ${isOpen && styles.mobileOverlayActive}`}></div>
-    </div>
+    </header>
   )
 }
 

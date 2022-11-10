@@ -11,7 +11,9 @@ function CustomerNav({ isOpen }) {
   const [cart, setCart] = useState([])
   return (
     <nav className={styles.container}>
-      <PhoneLink text={'+7(495) 150-14-77'} to={"tel:+74951501477"} />
+      <div className={styles.phoneContainer}>
+        <PhoneLink text={'+7(495) 150-14-77'} to={"tel:+74951501477"} />
+      </div>
       <Link
         to={'/whisList'}
         className={`${styles.link} ${isOpen && styles.mobileLink}`}>

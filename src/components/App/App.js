@@ -1,3 +1,4 @@
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Container from '../Ui/Container/Container';
 import Wrapper from '../Ui/Wrapper/Wrapper';
@@ -5,11 +6,9 @@ import Wrapper from '../Ui/Wrapper/Wrapper';
 function App() {
   return (
     <Wrapper>
-      <Container type={'main'}>
-        <Header />
-      </Container>
+      <Header />
+      <Footer />
     </Wrapper>
-
   );
 }
 
