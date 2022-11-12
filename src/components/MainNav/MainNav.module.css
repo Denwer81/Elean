@@ -28,6 +28,12 @@
   margin-top: 25px;
 }
 
+.hideAnim {
+  transform: scaleY(0);
+  opacity: 0;
+  transition: all .3s ease-in;
+}
+
 .menu {
   position: relative;
 }
@@ -75,10 +81,10 @@
 }
 
 .dropMenu::after {
-  position: absolute;
-  top: 0;
-  left: -1500px;
-  width: 5000px;
+  position: fixed;
+  top: 118px;
+  left: 0;
+  width: 100vw;
   content: '';
   background-color: var(--color-white);
   z-index: -1;

@@ -156,7 +156,7 @@
 }
 
 .mobileOverlay {
-  position: fixed;
+  position: absolute;
   height: 0;
   top: 0;
   bottom: 0;
@@ -164,7 +164,7 @@
   right: 0;
   opacity: .5;
   background-color: var(--color-black);
-  transition: all .8s ease-in;
+  transition: all .25s ease-in;
   z-index: 2;
 }
 

@@ -1,14 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CustomerNav from '../CustomerNav/CustomerNav';
 import MainLogo from '../MainLogo/MainLogo';
 import MainNav from '../MainNav/MainNav'
 import SosialNav from '../SosialNav/SosialNav';
 import Container from '../Ui/Container/Container';
+import {lockScroll, unLockScroll} from '../../services/utils/lockScroll'
 
 import styles from './Header.module.css'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    isOpen ? lockScroll() : unLockScroll()
+  }, [isOpen])
 
   const handleToggle = () => {
     setIsOpen(!isOpen)

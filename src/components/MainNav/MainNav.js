@@ -14,6 +14,10 @@ function MainNav({ isOpen }) {
   const [isOpenAbout, setIsOpenAbout] = useState(false);
 
   const handleToggleSubMenu = (isOpenSub, setIsOpenSub) => {
+    setIsOpenCategory(false)
+    setIsOpenCollection(false)
+    setIsOpenBuyers(false)
+    setIsOpenAbout(false)
     setIsOpenSub(!isOpenSub)
   }
 
