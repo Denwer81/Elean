@@ -65,6 +65,10 @@
   }
 }
 
+.navContainer {
+  margin-bottom: 25px;
+}
+
 @media screen and (max-width: 650px){
   .navContainer {
     display: none;
@@ -75,7 +79,7 @@
   min-height: 50px;
   display: flex;
   justify-content: space-between;
-  margin: 37px 0 8px 0;
+  margin: 12px 0 8px 0;
 }
 
 @media screen and (max-width: 1280px) {

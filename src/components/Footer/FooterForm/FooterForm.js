@@ -30,9 +30,10 @@ function FooterForm() {
         onChange={handleToggle}
         id='checkbox'
         type="checkbox"
+        name={'agree'}
         required
         checked={isChecked} />
-      <label className={styles.labelCheckbox} htmlFor="checkbox">
+      <label className={styles.labelCheckbox} htmlFor="checkbox" tabIndex={0}>
         <span className={styles.text}>
           Я согласен
         </span>
