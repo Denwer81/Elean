@@ -2,9 +2,10 @@
   width: 1340px;
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
 }
 
-@media screen and (max-width: 1500px){
+/* @media screen and (max-width: 1500px){
   .main {
     width: 1156px;
   }
@@ -38,7 +39,7 @@
   .main {
     width: 310px;
   }
-}
+} */
 
 .center {
   display: flex;

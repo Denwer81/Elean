@@ -1,0 +1,13 @@
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'futura';
+  font-size: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: .05em;
+  margin: 0;
+}

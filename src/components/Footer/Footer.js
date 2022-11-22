@@ -2,7 +2,6 @@ import React from 'react'
 import FooterNav from '../FooterNav/FooterNav'
 import MainLogo from '../MainLogo/MainLogo'
 import SosialNav from '../SosialNav/SosialNav'
-import Container from '../Ui/Container/Container'
 import PhoneLink from '../Ui/PhoneLink/PhoneLink'
 
 import styles from './Footer.module.css'
@@ -11,7 +10,6 @@ import FooterForm from './FooterForm/FooterForm'
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <Container type={'main'}>
         <div className={styles.wrapper}>
           <div className={styles.contacts}>
             <div className={styles.mobileNav}>
@@ -54,7 +52,6 @@ function Footer() {
           </div>
           <FooterForm />
         </div>
-      </Container>
     </footer>
   )
 }

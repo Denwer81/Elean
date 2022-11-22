@@ -13,6 +13,7 @@ function FooterForm() {
   return (
     <form className={styles.form}>
       <p className={styles.mobileText}>ПОДПИСАТЬСЯ НА НОВОСТИ</p>
+      <span className={styles.buttonText}>введите</span>
       <button className={styles.mobileButton}>&rarr;</button>
       <input
         className={`${styles.input} ${styles.name}`}

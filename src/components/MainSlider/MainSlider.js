@@ -2,9 +2,18 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import slide1 from '../../images/slider_1.png'
-import slide2 from '../../images/slider_2.png'
-import slide3 from '../../images/slider_3.jpg'
+import slide1_L_jpg from '../../images/mainSlider/slider_1.jpg'
+import slide1_L_webp from '../../images/mainSlider/slider_1.webp'
+import slide1_S_jpg from '../../images/mainSlider/slider_1_S.jpg'
+import slide1_S_webp from '../../images/mainSlider/slider_1_S.webp'
+import slide2_L_jpg from '../../images/mainSlider/slider_2.jpg'
+import slide2_L_webp from '../../images/mainSlider/slider_2.webp'
+import slide2_S_jpg from '../../images/mainSlider/slider_2_S.jpg'
+import slide2_S_webp from '../../images/mainSlider/slider_2_S.webp'
+import slide3_L_jpg from '../../images/mainSlider/slider_3.jpg'
+import slide3_L_webp from '../../images/mainSlider/slider_3.webp'
+import slide3_S_jpg from '../../images/mainSlider/slider_3_S.jpg'
+import slide3_S_webp from '../../images/mainSlider/slider_3_S.webp'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -34,19 +43,33 @@ const MainSlider = () => {
       >
         <SwiperSlide>
           <Link className='link' to='/catalog' >ВЫБЕРИТЕ СВОЙ СМОКИНГ</Link>
-          <img className='image' src={slide1} alt="slide1" />
+          <picture>
+            <source type="image/jpeg" srcSet={slide1_L_jpg} media='(min-width: 830px)' />
+            <source type="image/webp" srcSet={slide1_L_webp} media='(min-width: 830px)' />
+            <source type="image/webp" srcSet={slide1_S_webp} media='(max-width: 830px)' />
+            <img className='image' src={slide1_S_jpg} alt="about" />
+          </picture>
         </SwiperSlide>
         <SwiperSlide>
           <Link className='link' to='/catalog' >ВЫБЕРИТЕ СВОЙ СМОКИНГ</Link>
-          <img className='image' src={slide2} alt="slide2" />
+          <picture>
+            <source type="image/jpeg" srcSet={slide2_L_jpg} media='(min-width: 830px)' />
+            <source type="image/webp" srcSet={slide2_L_webp} media='(min-width: 830px)' />
+            <source type="image/webp" srcSet={slide2_S_webp} media='(max-width: 830px)' />
+            <img className='image' src={slide2_S_jpg} alt="about" />
+          </picture>
         </SwiperSlide>
         <SwiperSlide>
           <Link className='link' to='/catalog' >ВЫБЕРИТЕ СВОЙ СМОКИНГ</Link>
-          <img className='image image-2' src={slide3} alt="slide3" />
+          <picture>
+            <source type="image/jpeg" srcSet={slide3_L_jpg} media='(min-width: 830px)' />
+            <source type="image/webp" srcSet={slide3_L_webp} media='(min-width: 830px)' />
+            <source type="image/webp" srcSet={slide3_S_webp} media='(max-width: 830px)' />
+            <img className='image' src={slide3_S_jpg} alt="about" />
+          </picture>
         </SwiperSlide>
       </Swiper>
     </>
-
   );
 };
 
