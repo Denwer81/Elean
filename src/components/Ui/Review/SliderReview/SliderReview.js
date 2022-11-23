@@ -1,34 +1,38 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { sliderShowRoomData } from './sliderShowRoomData';
+import { Link } from 'react-router-dom'
+import { sliderReviewData } from './sliderData';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import './SliderShowRoom.css'
+import './SliderReview.css'
 import { Navigation, Pagination, Autoplay } from 'swiper';
 
-const SliderShowRoom = () => {
+const SliderReview = () => {
   return (
-    <div className='slider-showroom__container'>
+    <div className='slider-review__container'>
       <Swiper
-        className='slider-showroom'
+        className='slider-review'
         modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={8}
         breakpoints={{
           300: {
-            slidesPerView: 1,
-            spaceBetween: 4,
-          },
-          475: {
             slidesPerView: 2,
-            spaceBetween: 4,
+            spaceBetween: 10,
           },
-          920: {
+          580: {
             slidesPerView: 3,
-            spaceBetween: 8
-          }
+            spaceBetween: 20,
+          },
+          830: {
+            slidesPerView: 4,
+            spaceBetween: 25,
+          },
+          1140: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
         }}
         slidesPerView={3}
         navigation
@@ -41,10 +45,13 @@ const SliderShowRoom = () => {
         }}
       >
         {
-          sliderShowRoomData.map((item, index) => {
+          sliderReviewData.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <img className='image' src={item.image} alt="showRoom" />
+                <Link className='link' to={item.link}>
+                  <img className='image' src={item.image} alt="review" />
+                  <p className='text'>{item.name}</p>
+                </Link>
               </SwiperSlide>
             )
           })
@@ -54,4 +61,4 @@ const SliderShowRoom = () => {
   )
 }
 
-export default SliderShowRoom
+export default SliderReview

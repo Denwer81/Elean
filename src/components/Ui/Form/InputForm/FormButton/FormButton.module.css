@@ -1,0 +1,27 @@
+.button {
+  background: transparent;
+  height: 60px;
+  padding: 0;
+  border: 1px solid;
+  border-left: none;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .2s ease-in;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background-color: black;
+  border: 1px solid black;
+  border-left: none;
+  color: white;
+}
+
+@media screen and (max-width: 690px) {
+  .button {
+    border: 1px solid black;
+  }
+}

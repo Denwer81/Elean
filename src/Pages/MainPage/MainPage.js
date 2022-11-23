@@ -1,9 +1,11 @@
 import MainSlider from '../../components/MainSlider/MainSlider';
 import CatalogNav from '../../components/catalogNav/catalogNav';
-
-import styles from './MainPage.module.css'
 import SectionAbout from '../../components/SectionAbout/SectionAbout';
 import ShowRoom from '../../components/ShowRoom/ShowRoom';
+import SectionSignup from '../../components/SectionSignup/SectionSignup';
+import SectionReview from '../../components/SectionReview/SectionReview';
+
+import styles from './MainPage.module.css'
 
 function MainPage() {
   return (
@@ -12,6 +14,8 @@ function MainPage() {
       <CatalogNav />
       <SectionAbout />
       <ShowRoom />
+      <SectionSignup />
+      <SectionReview />
     </main>
   )
 }

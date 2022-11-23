@@ -1,15 +1,9 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
+import FormCheckbox from '../../Ui/Form/FormCheckBox/FormCheckbox'
 
 import styles from './FooterForm.module.css'
 
 function FooterForm() {
-  const [isChecked, setIsChecked] = useState(true)
-
-  const handleToggle = () => {
-    setIsChecked(!isChecked)
-  }
-
   return (
     <form className={styles.form}>
       <p className={styles.mobileText}>ПОДПИСАТЬСЯ НА НОВОСТИ</p>
@@ -27,19 +21,10 @@ function FooterForm() {
         placeholder='email'
         required
         minLength={2} />
-      <input className={styles.checkbox}
-        onChange={handleToggle}
-        id='checkbox'
-        type="checkbox"
-        name={'agree'}
-        required
-        checked={isChecked} />
-      <label className={styles.labelCheckbox} htmlFor="checkbox" tabIndex={0}>
-        <span className={styles.text}>
-          Я согласен
-        </span>
-        <Link to={'/'} className={styles.link}>с политикой конфиденциальности</Link>
-      </label>
+      <FormCheckbox
+        id={'FormCheckbox'}
+        text={'Я согласен'}
+        linkText={'с политикой конфиденциальности'} />
       <button
         className={styles.button}
         type="submit"

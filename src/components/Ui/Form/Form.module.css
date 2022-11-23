@@ -1,0 +1,83 @@
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.image {
+  width: 42px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.dashed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px;
+  box-sizing: border-box;
+}
+
+.dashedActive {
+  border: 1px dashed #CBC8C8;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 950px) {
+  .form {
+    width: 625px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .form {
+    width: 100%;
+  }
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.submitContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.area {
+  height: 100px;
+  display: block;
+  background: transparent;
+  border: 1px solid;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  resize: none;
+  padding: 20px 10px;
+}
+
+@media screen and (max-width: 690px) {
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .submitContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .area {
+    margin-bottom: 20px;
+  }
+}
