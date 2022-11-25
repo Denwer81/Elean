@@ -81,3 +81,30 @@
     margin-bottom: 20px;
   }
 }
+
+.addFoto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 23px;
+  color: #9191A2;
+  border: 1px dashed #C5C5D2;
+  padding: 0 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.addInput {
+  display: none;
+}
+
+.addFotoIcon {
+  width: 23px;
+  height: 23px;
+}

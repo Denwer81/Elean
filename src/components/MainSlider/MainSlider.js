@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { mainSliderData } from './mainSliderData';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -34,10 +35,10 @@ const MainSlider = () => {
               <SwiperSlide key={index}>
                 <Link className='link' to={item.link} >{item.title}</Link>
                 <picture>
-                  <source type="image/jpeg" srcSet={item.ImageLargeJpg} media='(min-width: 830px)' />
                   <source type="image/webp" srcSet={item.ImageLargeWebp} media='(min-width: 830px)' />
+                  <source type="image/jpeg" srcSet={item.ImageLargeJpg} media='(min-width: 830px)' />
                   <source type="image/webp" srcSet={item.ImagesmallWebp} media='(max-width: 830px)' />
-                  <img className='image' src={item.ImageSmallJpg} alt="about" />
+                  <img className='image' src={item.ImageSmallJpg} alt="about" width="1920" height="550" />
                 </picture>
               </SwiperSlide>
             )

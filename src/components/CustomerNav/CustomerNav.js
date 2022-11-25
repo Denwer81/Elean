@@ -9,6 +9,7 @@ import styles from './CustomerNav.module.css'
 function CustomerNav({ isOpen }) {
   const [whisList, setWishList] = useState([1, 2])
   const [cart, setCart] = useState([])
+  
   return (
     <nav className={styles.container}>
       <div className={styles.phoneContainer}>

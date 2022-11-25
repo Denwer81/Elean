@@ -5,6 +5,7 @@
   max-width: 1340px;
   padding: 0 10px;
   margin: 0 auto;
+  margin-bottom: 50px;
   box-sizing: border-box;
 }
 
@@ -77,6 +78,6 @@
 
 @media screen and (max-width: 450px) {
   .link {
-    width: 290px;
+    width: 270px;
   }
 }

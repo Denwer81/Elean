@@ -1,16 +1,25 @@
 import { useEffect, useState } from "react";
+import { lockScroll, unLockScroll } from "../utils/lockScroll";
+
 
 function useModal() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleOpen = () => setIsOpen(true);
+  const handleOpen = () => {
+    setIsOpen(true)
+    lockScroll()
+  };
 
-  const handleClose = () => setIsOpen(false);
+  const handleClose = () => {
+    setIsOpen(false)
+    unLockScroll()
+  };
 
   useEffect(() => {
     const handleEscapeKey = (e) => {
       if (e.key === 'Escape') {
         setIsOpen(false);
+        unLockScroll()
       }
     }
     if (isOpen) {
@@ -21,18 +30,10 @@ function useModal() {
     }
   }, [isOpen, setIsOpen]);
 
-  const handleOpenErrorModal = () => {
-    handleOpen();
-    setTimeout(() => {
-      handleClose();
-    }, 2500)
-  }
-
   return {
     isOpen,
     handleOpen,
     handleClose,
-    handleOpenErrorModal,
   }
 }
 

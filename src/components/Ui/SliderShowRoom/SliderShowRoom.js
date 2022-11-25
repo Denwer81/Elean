@@ -44,7 +44,7 @@ const SliderShowRoom = () => {
           sliderShowRoomData.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <img className='image' src={item.image} alt="showRoom" />
+                <img className='image' src={item.image} alt="showRoom" width="446" height="552" />
               </SwiperSlide>
             )
           })

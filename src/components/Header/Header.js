@@ -4,19 +4,31 @@ import MainLogo from '../MainLogo/MainLogo';
 import MainNav from '../MainNav/MainNav'
 import SosialNav from '../SosialNav/SosialNav';
 import Container from '../Ui/Container/Container';
-import {lockScroll, unLockScroll} from '../../services/utils/lockScroll'
+import { lockScroll, unLockScroll } from '../../services/utils/lockScroll'
 
 import styles from './Header.module.css'
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
+  const [isHide, setIsHide] = useState(false)
 
   useEffect(() => {
     isOpen ? lockScroll() : unLockScroll()
   }, [isOpen])
 
+  const handleClose = () => {
+    setIsOpen(false)
+  }
+
   const handleToggle = () => {
     setIsOpen(!isOpen)
+  }
+
+  const reRenderMenu = () => {
+    setIsHide(true)
+    setTimeout(() => {
+      setIsHide(false)
+    },0)
   }
 
   return (
@@ -36,7 +48,13 @@ function Header() {
             </div>
             <CustomerNav isOpen={isOpen} />
           </div>
-          <MainNav isOpen={isOpen} />
+          {
+            !isHide && <MainNav
+              isOpen={isOpen}
+              handleToggle={handleToggle}
+              handleClose={handleClose}
+              reRenderMenu={reRenderMenu} />
+          }
         </div>
       </Container>
       <div className={`${styles.mobileOverlay} ${isOpen && styles.mobileOverlayActive}`}></div>

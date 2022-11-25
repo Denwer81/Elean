@@ -39,7 +39,7 @@ const Reviews = () => {
       </section>
       {
         location.pathname === '/'
-          ? <Link to={'reviews'} className={styles.link}>смотреть все</Link>
+          ? <Link to={'reviews'} className={styles.link} preventScrollReset={false}>смотреть все</Link>
           : reviewsData.length > count
             && <button onClick={handleShowMore} className={styles.link}>показать еще</button>
       }

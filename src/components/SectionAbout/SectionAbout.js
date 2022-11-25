@@ -3,7 +3,7 @@ import Title from '../Ui/Title/Title'
 import { Link } from 'react-router-dom'
 
 import aboutImg_L from '../../images/about/about.png'
-import aboutImg_L_webp from '../../images/about/about_mainPage.webp'
+import aboutImg_L_webp from '../../images/about/about.webp'
 import aboutImg_S from '../../images/about/about_S.jpg'
 import styles from './SectionAbout.module.css'
 
@@ -13,8 +13,8 @@ const SectionAbout = () => {
       <Title title='о бренде' />
       <div className={styles.container}>
         <picture>
-          <source type="image/jpeg" srcSet={aboutImg_L}  media='(min-width: 830px)'/>
           <source type="image/webp" srcSet={aboutImg_L_webp}  media='(min-width: 830px)'/>
+          <source type="image/jpeg" srcSet={aboutImg_L}  media='(min-width: 830px)'/>
           <img className={styles.image} src={aboutImg_S} alt="about" />
         </picture>
         <div className={styles.textContainer}>

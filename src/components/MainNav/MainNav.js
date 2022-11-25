@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 import CustomLink from '../Ui/CustomLink/CustomLink'
-import SubMenuCategory from './SubMenuCategory/SubMenuCategory'
+import SubMenu from './SubMenu/SubMenu'
+import {
+  SubMenuAboutBrandData,
+  SubMenuBuyersData,
+  SubMenuCollectionData,
+  SubMenuCategoryData
+} from './SubMenu/SubMenuData'
 
 import styles from './MainNav.module.css'
-import SubMenuColection from './SubMenuCollection/SubMenuCollection'
-import SubMenuBuyers from './SubMenuBuyers/SubMenuBuyers'
-import SubMenuAboutBrand from './SubMenuAboutBrand/SubMenuAboutBrand'
 
-function MainNav({ isOpen }) {
+function MainNav({ isOpen, handleClose, reRenderMenu }) {
   const [isOpenCategory, setIsOpenCategory] = useState(false);
   const [isOpenCollection, setIsOpenCollection] = useState(false);
   const [isOpenBuyers, setIsOpenBuyers] = useState(false);
@@ -25,9 +28,10 @@ function MainNav({ isOpen }) {
     <nav className={`${styles.nav} ${isOpen && styles.navMobile}`}>
       <ul className={`${styles.list} ${isOpen && styles.listMobile}`}>
 
-        <li className={isOpen ? styles.itemList : ''}>
+        <li
+          onClick={handleClose}
+          className={isOpen ? styles.itemList : ''}>
           <CustomLink
-            to={'https://ru-ru.facebook.com'}
             isOpen={isOpen}
             text={'новинки'}
             type={'default'} />
@@ -37,14 +41,17 @@ function MainNav({ isOpen }) {
           className={isOpen ? styles.itemList : styles.menu}
           onClick={() => handleToggleSubMenu(isOpenCategory, setIsOpenCategory)}>
           <CustomLink
-            to={'https://ru-ru.facebook.com'}
             isOpen={isOpen}
             text={`${!isOpen ? 'категории' : 'категории +'}`}
             type={'default'} />
           <ul className={`${!isOpen
             ? `${styles.dropMenu} ${styles.category}`
             : styles.menuMobile} ${isOpenCategory && styles.menuMobileActive}`}>
-            <SubMenuCategory isOpen={isOpen} />
+            <SubMenu
+              data={SubMenuCategoryData}
+              isOpen={isOpen}
+              handleClose={handleClose}
+              reRenderMenu={reRenderMenu} />
           </ul>
         </li>
 
@@ -52,14 +59,17 @@ function MainNav({ isOpen }) {
           className={isOpen ? styles.itemList : styles.menu}
           onClick={() => handleToggleSubMenu(isOpenCollection, setIsOpenCollection)}>
           <CustomLink
-            to={'https://ru-ru.facebook.com'}
             isOpen={isOpen}
             text={`${!isOpen ? 'наши коллекции' : 'наши коллекции +'}`}
             type={'default'} />
           <ul className={`${!isOpen
             ? `${styles.dropMenu} ${styles.collection}`
             : styles.menuMobile} ${isOpenCollection && styles.menuMobileActive}`}>
-            <SubMenuColection isOpen={isOpen} />
+            <SubMenu
+              data={SubMenuCollectionData}
+              isOpen={isOpen}
+              handleClose={handleClose}
+              reRenderMenu={reRenderMenu} />
           </ul>
         </li>
 
@@ -67,14 +77,17 @@ function MainNav({ isOpen }) {
           className={isOpen ? styles.itemList : styles.menu}
           onClick={() => handleToggleSubMenu(isOpenBuyers, setIsOpenBuyers)}>
           <CustomLink
-            to={'https://ru-ru.facebook.com'}
             isOpen={isOpen}
             text={`${!isOpen ? 'покупателям' : 'покупателям +'}`}
             type={'default'} />
           <ul className={`${!isOpen
             ? `${styles.dropMenu} ${styles.buyers}`
             : styles.menuMobile} ${isOpenBuyers && styles.menuMobileActive}`}>
-            <SubMenuBuyers isOpen={isOpen} />
+            <SubMenu
+              data={SubMenuBuyersData}
+              isOpen={isOpen}
+              handleClose={handleClose}
+              reRenderMenu={reRenderMenu} />
           </ul>
         </li>
 
@@ -82,28 +95,35 @@ function MainNav({ isOpen }) {
           className={isOpen ? styles.itemList : styles.menu}
           onClick={() => handleToggleSubMenu(isOpenAbout, setIsOpenAbout)}>
           <CustomLink
-            to={'https://ru-ru.facebook.com'}
             isOpen={isOpen}
             text={`${!isOpen ? 'о бренде' : 'о бренде +'}`}
             type={'default'} />
           <ul className={`${!isOpen
             ? `${styles.dropMenu} ${styles.about}`
             : styles.menuMobile} ${isOpenAbout && styles.menuMobileActive}`}>
-            <SubMenuAboutBrand isOpen={isOpen} />
+            <SubMenu
+              data={SubMenuAboutBrandData}
+              isOpen={isOpen}
+              handleClose={handleClose}
+              reRenderMenu={reRenderMenu} />
           </ul>
         </li>
 
-        <li className={isOpen ? styles.itemList : styles.menu}>
+        <li
+          onClick={handleClose}
+          className={isOpen ? styles.itemList : styles.menu}>
           <CustomLink
-            to={'https://ru-ru.facebook.com'}
+            to={'/showroom'}
             isOpen={isOpen}
             text={'шоурум'}
             type={'default'} />
         </li>
 
-        <li className={isOpen ? styles.itemList : styles.menu}>
+        <li
+          onClick={handleClose}
+          className={isOpen ? styles.itemList : styles.menu}>
           <CustomLink
-            to={'https://ru-ru.facebook.com'}
+            to={'/contact'}
             isOpen={isOpen}
             text={'контакты'}
             type={'default'} />

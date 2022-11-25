@@ -7,7 +7,7 @@ import styles from './MainLogo.module.css'
 function MainLogo({ text, isOpen }) {
   return (
     <>
-      <Link className={`${styles.link} ${isOpen && styles.linkMobile}`}>
+      <Link to={'/'} className={`${styles.link} ${isOpen && styles.linkMobile}`}>
         <img
           className={styles.logo}
           src={logo}

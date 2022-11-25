@@ -1,7 +1,7 @@
 import MainSlider from '../../components/MainSlider/MainSlider';
-import CatalogNav from '../../components/catalogNav/catalogNav';
+import CatalogNav from '../../components/CatalogNav/catalogNav';
 import SectionAbout from '../../components/SectionAbout/SectionAbout';
-import ShowRoom from '../../components/ShowRoom/ShowRoom';
+import SectionShowroom from '../../components/SectionShowroom/SectionShowroom';
 import SectionSignup from '../../components/SectionSignup/SectionSignup';
 import SectionReview from '../../components/SectionReview/SectionReview';
 
@@ -13,7 +13,7 @@ function MainPage() {
       <MainSlider />
       <CatalogNav />
       <SectionAbout />
-      <ShowRoom />
+      <SectionShowroom />
       <SectionSignup />
       <SectionReview />
     </main>

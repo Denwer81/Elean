@@ -49,7 +49,7 @@ const SliderReview = () => {
             return (
               <SwiperSlide key={index}>
                 <Link className='link' to={item.link}>
-                  <img className='image' src={item.image} alt="review" />
+                  <img className='image' src={item.image} alt="review" width="250" height="360"/>
                   <p className='text'>{item.name}</p>
                 </Link>
               </SwiperSlide>
