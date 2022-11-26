@@ -25,7 +25,7 @@ const SectionSignup = () => {
       <InputForm
         type={'date'}
         name={'date'}
-        placeholder={'введите имя'}
+        placeholder={'введите дату'}
       />
     </Form>
   )

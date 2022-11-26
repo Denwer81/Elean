@@ -22,7 +22,7 @@ const FormCheckbox = ({ id, text, linkText }) => {
         <span
           className={styles.text}>
           {text}
-        <Link to={'/'} className={styles.link}>{linkText}</Link>
+        <Link to={'/terms'} className={styles.link}>{linkText}</Link>
         </span>
       </label>
     </>

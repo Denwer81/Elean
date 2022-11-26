@@ -64,9 +64,9 @@ const SliderShowRoomVideo = () => {
                   onClick={() => handleOpenVideo({ link: item.link })}
                   className='image'
                   src={item.image}
-                  alt="review" 
+                  alt="review"
                   width="250" height="360"
-                  />
+                />
                 <p className='text'>{item.name}</p>
                 <img className='video' src={videoIcon} alt='iconVideo'></img>
               </SwiperSlide>
@@ -77,7 +77,14 @@ const SliderShowRoomVideo = () => {
       <Modal
         isOpen={isOpen}
         handleClose={handleClose}>
-        <iframe className='iframe__SliderShowRoomVideo' src={videoLink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe
+          className='iframe__SliderShowRoomVideo'
+          src={videoLink}
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen>
+        </iframe>
       </Modal>
     </div>
   )

@@ -13,9 +13,9 @@ import icon3 from '../../images/about/icon3.svg'
 import icon4 from '../../images/about/icon4.svg'
 import icon5 from '../../images/about/icon5.svg'
 
-import styles from './AboutUs.module.css'
+import styles from './AboutUsPage.module.css'
 
-const AboutUs = () => {
+const AboutUsPage = () => {
   return (
     <main className={styles.main}>
       <Title title={'о бренде'} />
@@ -82,4 +82,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default AboutUsPage

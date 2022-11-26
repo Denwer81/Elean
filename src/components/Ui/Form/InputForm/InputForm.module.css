@@ -12,17 +12,13 @@
   box-sizing: border-box;
 }
 
-/* .input:not(:last-child) {
-  border-right: none;
-} */
-
-@media screen and (min-width: 691px) {
+@media screen and (min-width: 700px) {
   .input:not(:last-child) {
     border-right: none;
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 700px) {
   .input {
     border: 1px solid black;
   }

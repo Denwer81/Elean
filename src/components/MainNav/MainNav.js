@@ -123,7 +123,7 @@ function MainNav({ isOpen, handleClose, reRenderMenu }) {
           onClick={handleClose}
           className={isOpen ? styles.itemList : styles.menu}>
           <CustomLink
-            to={'/contact'}
+            to={'/contacts'}
             isOpen={isOpen}
             text={'контакты'}
             type={'default'} />
