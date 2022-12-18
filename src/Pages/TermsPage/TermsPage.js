@@ -1,9 +1,7 @@
 import React from 'react'
-import Form from '../../components/Ui/Form/Form'
-import InputForm from '../../components/Ui/Form/InputForm/InputForm'
+import SectionAsk from '../../components/SectionAsk/SectionAsk'
 import Title from '../../components/Ui/Title/Title'
 
-import iconAsk from '../../images/icons/ask.svg'
 import styles from './TermsPage.module.css'
 
 const TermsPage = () => {
@@ -241,28 +239,7 @@ const TermsPage = () => {
         <br></br>
         14.3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу https://eleanboutique.ru/terms.html.
       </p>
-      <Form
-        icon={iconAsk}
-        title={'задать вопрос'}
-        placeHolder={'Добавить комментарий'}
-        dashed={true}
-      >
-        <InputForm
-          type={'text'}
-          name={'name'}
-          placeholder={'введите имя'}
-        />
-        <InputForm
-          type={'phone'}
-          name={'phone'}
-          placeholder={'введите телефон'}
-        />
-        <InputForm
-          type={'email'}
-          name={'email'}
-          placeholder={'введите email'}
-        />
-      </Form>
+      <SectionAsk />
     </main>
   )
 }

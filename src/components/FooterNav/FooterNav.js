@@ -6,15 +6,19 @@ import styles from './FooterNav.module.css'
 function FooterNav() {
   const linkData = [
     {
-      to: 'https://ru-ru.facebook.com',
+      to: '/delivery',
       text: 'Доставка',
     },
     {
-      to: 'https://ru-ru.facebook.com',
+      to: '/payment',
       text: 'Оплата',
     },
     {
-      to: 'https://ru-ru.facebook.com',
+      to: '/exchange',
+      text: 'Обмен',
+    },
+    {
+      to: '/return',
       text: 'Возврат',
     },
     {
@@ -22,11 +26,7 @@ function FooterNav() {
       text: 'Размерная таблица',
     },
     {
-      to: 'https://ru-ru.facebook.com',
-      text: 'Примерка',
-    },
-    {
-      to: 'https://ru-ru.facebook.com',
+      to: '/contacts',
       text: 'Контакты',
     },
   ]

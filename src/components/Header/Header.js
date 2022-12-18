@@ -28,7 +28,7 @@ function Header() {
     setIsHide(true)
     setTimeout(() => {
       setIsHide(false)
-    },0)
+    }, 0)
   }
 
   return (
@@ -39,7 +39,9 @@ function Header() {
             <button
               onClick={handleToggle}
               className={`${styles.burger} ${isOpen && styles.burgeActive}`}
-              type='button'></button>
+              aria-label="open menu"
+              type='button'>
+            </button>
             <div className={styles.sosial}>
               <SosialNav isOpen={isOpen} />
             </div>

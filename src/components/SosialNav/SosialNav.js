@@ -8,15 +8,17 @@ import styles from './SosialNav.module.css'
 function SosialNav() {
   return (
     <nav className={styles.container}>
-       <a
-        href='https://facebook.com'
+      <a
+        href='https://instagram.com'
         className={styles.link}
         target="_blank"
         rel="noopener noreferrer">
         <img
+          width='18px'
+          heigth='19px'
           className={styles.image}
           src={instagram}
-          alt="facebook">
+          alt="instagram">
         </img>
       </a>
       <a
@@ -25,20 +27,24 @@ function SosialNav() {
         target="_blank"
         rel="noopener noreferrer">
         <img
+          width='17px'
+          heigth='15px'
           className={styles.image}
           src={facebook}
           alt="facebook">
         </img>
       </a>
       <a
-        href='https://facebook.com'
+        href='https://vk.com/'
         className={styles.link}
         target="_blank"
         rel="noopener noreferrer">
         <img
+          width='20px'
+          heigth='12px'
           className={styles.image}
           src={vk}
-          alt="facebook">
+          alt="vk">
         </img>
       </a>
     </nav>

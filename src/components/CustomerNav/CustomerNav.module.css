@@ -4,6 +4,7 @@
   justify-content: flex-end;
   align-items: center;
   justify-self: end;
+  margin-right: 5px;
 }
 
 @media screen and (max-width: 830px){
@@ -16,7 +17,7 @@
   .container {
     justify-content: space-between;
     width: 100%;
-    margin-right: 19px;
+    margin-right: 14px;
   }
 }
 
@@ -45,6 +46,13 @@
 
 .container:first-child {
   margin-right: 49px;
+}
+
+.image {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  object-fit: none;
 }
 
 .counter {

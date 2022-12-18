@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'futura';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 300;
   font-display: swap;
   src: url("./FuturaBookC.woff") format("woff");
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'futura';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("./FuturaMediumC.woff") format("woff");
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'futura';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url("./FuturaDemiC.woff") format("woff");
@@ -24,32 +24,40 @@
 
 @font-face {
   font-family: 'lato';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./Lato-Regular.woff") format("woff");
+  src:
+    url("./latoregular.woff2") format("woff2"),
+    url("./latoregular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'lato';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("./Lato-Medium.woff") format("woff");
+  src:
+    url("./latomedium.woff2") format("woff2"),
+    url("./latomedium.woff") format("woff");
 }
 
 @font-face {
   font-family: 'lato';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("./Lato-Semibold.woff") format("woff");
+  src:
+    url("./latosemibold.woff2") format("woff2"),
+    url("./latosemibold.woff") format("woff");
 }
 
 @font-face {
   font-family: 'lato';
-  font-style:  normal;
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("./Lato-Bold.woff") format("woff");
+  src:
+    url("./latobold.woff2") format("woff2"),
+    url("./latobold.woff") format("woff");
 }

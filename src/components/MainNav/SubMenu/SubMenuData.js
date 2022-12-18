@@ -66,27 +66,27 @@ export const SubMenuCategoryData = [
 
 export const SubMenuBuyersData = [
   {
-    to: 'https://ru-ru.facebook.com',
+    to: '/delivery',
     text: 'Доставка',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: '/payment',
     text: 'Оплата',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: '/exchange',
     text: 'Обмен',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: '/return',
     text: 'Возврат',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: '/fiting',
     text: 'Примерка',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: '/discount',
     text: 'Как\u00A0получить\u00A0скидку',
   },
 ]

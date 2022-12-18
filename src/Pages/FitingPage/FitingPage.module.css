@@ -1,0 +1,63 @@
+.main {
+  position: relative;
+  width: 100%;
+  max-width: 1360px;
+  height: 2200px;
+  background-position: top left;
+  margin-top: 50px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2600px;
+  background-color: rgb(243, 243, 243);
+  background-image: image-set(
+      url('../../images/fiting/elean47390-1.webp') 1x,
+      url('../../images/fiting/elean47390-1.png') 1x);
+  background-position: -400px 100px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1450px) {
+  .background {
+    background-position: -500px 100px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .background {
+    background-position: -600px 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .background {
+    background-image: none;
+  }
+}
+
+.container {
+  width: 650px;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+.list {
+  font-family: "Futura", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #171717;
+  list-style-type: '— ';
+  margin-bottom: 50px;
+}
+
+.list li:not(:last-child) {
+  margin-bottom: 20px;
+}

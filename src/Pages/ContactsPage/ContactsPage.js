@@ -1,10 +1,7 @@
 import React from 'react'
-import Form from '../../components/Ui/Form/Form'
-import InputForm from '../../components/Ui/Form/InputForm/InputForm'
 import Title from '../../components/Ui/Title/Title'
 import { ContactInfo } from '../../components/Ui/ContactInfo/ContactInfo'
 
-import iconShowroom from '../../images/icons/showroom.svg'
 import call from '../../images/contacts/call-add.svg'
 import compas from '../../images/contacts/compas.svg'
 import doc from '../../images/contacts/doc.svg'
@@ -13,6 +10,7 @@ import info from '../../images/contacts/info.svg'
 import time from '../../images/contacts/time.svg'
 import whatsapp from '../../images/contacts/whatsapp.svg'
 import styles from './ContactsPage.module.css'
+import SectionSignup from '../../components/SectionSignup/SectionSignup'
 
 const ContactsPage = () => {
   return (
@@ -61,29 +59,7 @@ const ContactsPage = () => {
           />
         </div>
       </div>
-      <Form
-        icon={iconShowroom}
-        title={'ЗАПИСАТЬСЯ НА ПРИМЕРКУ В ШОУРУМЕ'}
-        placeHolder={'Добавить комментарий'}
-        dashed={true}
-      >
-        <InputForm
-          type={'text'}
-          name={'name'}
-          placeholder={'введите имя'}
-        />
-        <InputForm
-          type={'phone'}
-          name={'phone'}
-          placeholder={'введите телефон'}
-        />
-        <InputForm
-          type={'date'}
-          name={'date'}
-          placeholder={'введите дату'}
-        />
-      </Form>
-
+      <SectionSignup />
     </main>
   )
 }

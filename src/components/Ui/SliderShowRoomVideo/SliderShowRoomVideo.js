@@ -59,9 +59,10 @@ const SliderShowRoomVideo = () => {
         {
           SliderShowRoomVideoData.map((item, index) => {
             return (
-              <SwiperSlide key={index}>
+              <SwiperSlide
+                onClick={() => handleOpenVideo({ link: item.link })}
+                key={index}>
                 <img
-                  onClick={() => handleOpenVideo({ link: item.link })}
                   className='image'
                   src={item.image}
                   alt="review"
