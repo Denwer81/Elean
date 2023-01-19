@@ -28,21 +28,10 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 900px;
+  width: 100%;
+  max-width: 950px;
   margin: 0 auto;
   margin-top: 20px;
-}
-
-@media screen and (max-width: 970px) {
-  .form {
-    width: 625px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .form {
-    width: 100%;
-  }
 }
 
 .inputContainer {

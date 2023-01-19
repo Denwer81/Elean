@@ -93,6 +93,15 @@
   cursor: pointer;
 }
 
+.slider-showroomVideo__container .video_fitting {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  top: 55%;
+  left: 10%;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 650px) {
   .slider-showroomVideo__container .video {
     top: 55%;

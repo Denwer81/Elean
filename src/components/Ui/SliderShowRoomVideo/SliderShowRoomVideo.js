@@ -13,15 +13,19 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './SliderShowRoomVideo.css'
 import { Navigation, Pagination, Autoplay } from 'swiper';
+import { useLocation } from 'react-router-dom';
 
 const SliderShowRoomVideo = () => {
+  const location = useLocation();
   const { isOpen, handleOpen, handleClose } = useModal()
-  const [videoLink, setVideoLink] = useState(null);
+  const [videoLink, setVideoLink] = useState(null)
+  const videoClassName = location.pathname === '/fiting' ? 'video_fitting' : 'video'
 
   const handleOpenVideo = ({ link }) => {
     setVideoLink(link)
     handleOpen()
   }
+
 
   return (
     <div className='slider-showroomVideo__container'>
@@ -69,7 +73,7 @@ const SliderShowRoomVideo = () => {
                   width="250" height="360"
                 />
                 <p className='text'>{item.name}</p>
-                <img className='video' src={videoIcon} alt='iconVideo'></img>
+                <img className={videoClassName} src={videoIcon} alt='iconVideo'></img>
               </SwiperSlide>
             )
           })

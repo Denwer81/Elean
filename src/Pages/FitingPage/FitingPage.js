@@ -1,5 +1,6 @@
 import React from 'react'
 import SectionSignup from '../../components/SectionSignup/SectionSignup'
+import SizeTable from '../../components/Ui/SizeTable/SizeTable'
 import SliderShowRoomVideo from '../../components/Ui/SliderShowRoomVideo/SliderShowRoomVideo'
 import Title from '../../components/Ui/Title/Title'
 
@@ -34,6 +35,7 @@ const FitingPage = () => {
             </li>
           </ul>
           <Title title={'ТАБЛИЦА РАЗМЕРОВ:'} />
+          <SizeTable />
           <SliderShowRoomVideo />
           <SectionSignup />
         </div>

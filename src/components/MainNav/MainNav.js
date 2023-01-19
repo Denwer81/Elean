@@ -32,6 +32,7 @@ function MainNav({ isOpen, handleClose, reRenderMenu }) {
           onClick={handleClose}
           className={isOpen ? styles.itemList : ''}>
           <CustomLink
+            to={'/'}
             isOpen={isOpen}
             text={'новинки'}
             type={'default'} />
@@ -41,6 +42,7 @@ function MainNav({ isOpen, handleClose, reRenderMenu }) {
           className={isOpen ? styles.itemList : styles.menu}
           onClick={() => handleToggleSubMenu(isOpenCategory, setIsOpenCategory)}>
           <CustomLink
+            to={'/'}
             isOpen={isOpen}
             text={`${!isOpen ? 'категории' : 'категории +'}`}
             type={'default'} />
@@ -59,6 +61,7 @@ function MainNav({ isOpen, handleClose, reRenderMenu }) {
           className={isOpen ? styles.itemList : styles.menu}
           onClick={() => handleToggleSubMenu(isOpenCollection, setIsOpenCollection)}>
           <CustomLink
+            to={'/'}
             isOpen={isOpen}
             text={`${!isOpen ? 'наши коллекции' : 'наши коллекции +'}`}
             type={'default'} />
@@ -77,6 +80,7 @@ function MainNav({ isOpen, handleClose, reRenderMenu }) {
           className={isOpen ? styles.itemList : styles.menu}
           onClick={() => handleToggleSubMenu(isOpenBuyers, setIsOpenBuyers)}>
           <CustomLink
+            to={'/delivery'}
             isOpen={isOpen}
             text={`${!isOpen ? 'покупателям' : 'покупателям +'}`}
             type={'default'} />
@@ -95,6 +99,7 @@ function MainNav({ isOpen, handleClose, reRenderMenu }) {
           className={isOpen ? styles.itemList : styles.menu}
           onClick={() => handleToggleSubMenu(isOpenAbout, setIsOpenAbout)}>
           <CustomLink
+            to={'/about-us'}
             isOpen={isOpen}
             text={`${!isOpen ? 'о бренде' : 'о бренде +'}`}
             type={'default'} />

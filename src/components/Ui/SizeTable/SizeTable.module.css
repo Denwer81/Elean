@@ -1,0 +1,39 @@
+.table {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  background-color: rgb(247, 247, 247);
+  border-collapse: collapse;
+  border: 1px solid #E6E7EB;
+}
+
+.tableRow tr {
+  width: 100%;
+  min-height: 50px;
+  margin: 0 auto;
+}
+
+.table th {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  background-color: rgb(247, 247, 247);
+  padding: 10px 0;
+}
+
+.table p {
+  border-top: 1px solid #E6E7EB;
+  border-bottom: 1px solid #E6E7EB;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.table thead th{
+  font-size: 16px;
+}
+
+.table tr:last-child th {
+  padding-bottom: 0;
+}
