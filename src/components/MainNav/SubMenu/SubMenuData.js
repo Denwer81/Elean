@@ -1,66 +1,66 @@
 export const SubMenuCollectionData = [
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'collection/autumn-winter-22-23',
     text: 'Осень-зима 22-23',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'collection/kits',
     text: 'Готовые комплекты',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'collection/preorder',
     text: 'Предзаказ',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'collection/spring-summer-2022',
     text: 'Весна-лето 2022',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'collection/wedding',
     text: 'Свадьба\u00A0и\u00A0выпускной',
   },
 ]
 
 export const SubMenuCategoryData = [
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'category/sale',
+    text: 'SALE',
+  },
+  {
+    to: 'category/tuxedos',
     text: 'Смокинг',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'category/suits',
     text: 'Костюмы',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'category/accessories',
     text: 'Аксессуары',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'category/trousers',
     text: 'Брюки',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'category/blouses',
     text: 'Блузы',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'category/dresses',
     text: 'Платья',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'category/vests',
     text: 'Топы\u00A0и\u00A0жилеты',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'category/skirts',
     text: 'Юбки',
   },
   {
-    to: 'https://ru-ru.facebook.com',
+    to: 'category/certificates',
     text: 'Подарочные\u00A0сертификаты',
-  },
-  {
-    to: 'https://ru-ru.facebook.com',
-    text: 'SALE',
   },
 ]
 

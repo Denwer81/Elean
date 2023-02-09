@@ -11,7 +11,7 @@ function CatalogNav() {
         {
           catalogData.map((item, index) => {
             return (
-              <Link key={index} className={item.linkStyle}>
+              <Link key={index} to={item.to} className={item.linkStyle}>
                 <h2 className={styles.title}>{item.title}</h2>
                 <picture>
                   <source type="image/webp" srcSet={item.imageWebp} />

@@ -5,8 +5,16 @@
 
 }
 
+.iconContainer {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
 .icon {
-  max-width: 24px;
   display: block;
   height: auto;
   margin-right: 15px;

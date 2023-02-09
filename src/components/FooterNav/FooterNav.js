@@ -22,8 +22,8 @@ function FooterNav() {
       text: 'Возврат',
     },
     {
-      to: 'https://ru-ru.facebook.com',
-      text: 'Размерная таблица',
+      to: '/fiting',
+      text: 'примерка',
     },
     {
       to: '/contacts',

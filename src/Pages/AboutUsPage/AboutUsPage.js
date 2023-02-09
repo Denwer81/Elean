@@ -19,7 +19,9 @@ const AboutUsPage = () => {
   return (
     <main className={styles.main}>
       <Title title={'о бренде'} />
-      <img className={styles.boutUsImage} src={aboutImg} alt="us" width="1400" height="630" />
+      <div className={styles.imageContainer}>
+        <img className={styles.aboutUsImage} src={aboutImg} alt="us" width="1400" height="630" />
+      </div>
       <div className={styles.aboutUsTextContainer}>
         <div>
           <p className={styles.aboutUsText}>

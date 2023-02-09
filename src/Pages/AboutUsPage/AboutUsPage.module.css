@@ -7,12 +7,22 @@
   padding: 0 10px;
 }
 
-.boutUsImage {
+.imageContainer {
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.aboutUsImage {
+  display: block;
   max-width: 1340px;
   width: 100%;
   height: 100%;
   height: auto;
-  margin-top: 30px;
+  transition: all .6s ease-in;
+}
+
+.aboutUsImage:hover {
+  transform: scale(1.1);
 }
 
 .aboutUsTextContainer {

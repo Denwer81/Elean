@@ -32,9 +32,9 @@ function MainNav({ isOpen, handleClose, reRenderMenu }) {
           onClick={handleClose}
           className={isOpen ? styles.itemList : ''}>
           <CustomLink
-            to={'/'}
+            to={'/category/sale'}
             isOpen={isOpen}
-            text={'новинки'}
+            text={'SALE'}
             type={'default'} />
         </li>
 
@@ -42,7 +42,7 @@ function MainNav({ isOpen, handleClose, reRenderMenu }) {
           className={isOpen ? styles.itemList : styles.menu}
           onClick={() => handleToggleSubMenu(isOpenCategory, setIsOpenCategory)}>
           <CustomLink
-            to={'/'}
+            to={'/category'}
             isOpen={isOpen}
             text={`${!isOpen ? 'категории' : 'категории +'}`}
             type={'default'} />
@@ -61,7 +61,7 @@ function MainNav({ isOpen, handleClose, reRenderMenu }) {
           className={isOpen ? styles.itemList : styles.menu}
           onClick={() => handleToggleSubMenu(isOpenCollection, setIsOpenCollection)}>
           <CustomLink
-            to={'/'}
+            to={'/collection'}
             isOpen={isOpen}
             text={`${!isOpen ? 'наши коллекции' : 'наши коллекции +'}`}
             type={'default'} />

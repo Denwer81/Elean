@@ -160,7 +160,6 @@ const SizeTable = () => {
             </p>
           </th>
         </tr>
-        
       </tbody>
     </table>
   )
